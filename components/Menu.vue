@@ -43,9 +43,10 @@
         </div>
       </div>
     </div>
-    <div class="flexbox-container">
-      <div class="flexbox-item-1">
-        <h2>What I do</h2>
+    <div class="services-grid">
+      <h2 class="services-header">What I do</h2>
+
+      <div class="flexbox-item">
         <img src="/mobile_web_design.png" alt="" />
         <h4>Mobile & Web Design</h4>
         <p>
@@ -57,7 +58,7 @@
         </p>
       </div>
 
-      <div class="flexbox-item-2">
+      <div class="flexbox-item">
         <svg
           width="73"
           height="55"
@@ -98,7 +99,7 @@
           characters, abstracts, textures, etc.
         </p>
       </div>
-      <div class="flexbox-item-3">
+      <div class="flexbox-item">
         <img src="frontend.png" alt="" />
         <h4>Frontend development</h4>
         <p>
@@ -114,6 +115,26 @@
   </div>
 </template>
 <style scoped>
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+}
+
+@media screen and (max-width: 912px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid > .services-header {
+    grid-column: unset;
+  }
+}
+
+.services-header {
+  grid-column: span 3;
+}
+
 .intro-container {
   display: flex;
   justify-content: center;
