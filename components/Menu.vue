@@ -2,20 +2,19 @@
   <div class="container">
     <div class="top-bar">
       <div class="logo-container"><img src="/logo.png" alt="" /></div>
-      <div class="background"><img src="/photp.png" alt="" /></div>
       <nav class="menu">
         <ul>
           <li>
             <span class="nav-number">1. </span>
-            <span class="nav-text">home</span>
+            <span class="nav-text">Services</span>
           </li>
           <li>
             <span class="nav-number">2. </span>
-            <span class="nav-text">About</span>
+            <span class="nav-text">Work</span>
           </li>
           <li>
             <span class="nav-number">3. </span>
-            <span class="nav-text">Services</span>
+            <span class="nav-text">About</span>
           </li>
           <li>
             <span class="nav-number">4. </span>
@@ -28,7 +27,7 @@
       <!-- refactor -->
     </div>
     <div class="intro-container">
-      <div>
+      <div class="profile-pic">
         <img src="/Cover.png" alt="" />
       </div>
       <div class="intro-details">
@@ -50,11 +49,9 @@
         <img src="/mobile_web_design.png" alt="" />
         <h4>Mobile & Web Design</h4>
         <p>
-          Need a website or mobile app? I can create <br />
-          beautiful websites or mobile apps based on <br />
-          your content, or redesign your old website <br />
-          to improve user engagement or achieve <br />
-          your business goals.
+          Need a website or mobile app? I can create beautiful websites or
+          mobile apps based on your content, or redesign your old website to
+          improve user engagement or achieve your businessi goals.
         </p>
       </div>
 
@@ -92,22 +89,18 @@
 
         <h4>Graphic Design</h4>
         <p>
-          Need art for your project? I can create <br />
-          beautiful art, designs based on your project <br />
-          requirements such as business cards, digital <br />
-          banners, icons, logos, hand-drawn <br />
-          characters, abstracts, textures, etc.
+          Need art for your project? I can create beautiful art, designs based
+          on your project requirements such as business cards, digital banners,
+          icons, logos, hand-drawn characters, abstracts, textures, etc.
         </p>
       </div>
       <div class="flexbox-item">
         <img src="frontend.png" alt="" />
         <h4>Frontend development</h4>
         <p>
-          Already have the design? I can create static <br />
-          websites such as landing pages, company <br />
-          sites, and custom websites with minimal <br />
-          javascript. Will deliver a well-documented <br />
-          code.
+          Already have the design? I can create static websites such as landing
+          pages, company sites, and custom websites with minimal javascript.
+          Will deliver a well-documented code.
         </p>
       </div>
     </div>
@@ -115,10 +108,34 @@
   </div>
 </template>
 <style scoped>
+.logo-container {
+  transform: translateX(-100px);
+}
+
+.profile-pic {
+  background: url('/Photp.png');
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-bottom: 1px;
+}
+
+.background {
+  display: flex;
+  position: relative;
+  top: 400px;
+}
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
+  color: #a4a4a4;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  word-wrap: normal;
+  margin-top: 150px;
 }
 
 @media screen and (max-width: 912px) {
@@ -136,9 +153,10 @@
 }
 
 .intro-container {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  gap: 140px;
+  min-height: 254px;
 }
 .top-bar {
   align-items: center;
@@ -174,6 +192,7 @@ ul {
   display: inline-flex;
   gap: 24px;
 }
+
 li {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -181,10 +200,13 @@ li {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
+  color: var(--color-primary);
 }
+/*
 .background {
   display: inline-block;
 }
+*/
 .button1 {
   background-color: #336699;
   display: inline-flex;
@@ -214,25 +236,18 @@ li {
   margin-left: 20px;
   margin-top: 50px;
 }
+/*
+
 .flexbox-container {
   display: inline-flex;
   top: 700px;
   align-items: center;
   font-size: 20px;
   font-weight: 400;
-}
-
-/*
-.services1 {
-  position: absolute;
-  top: 700px;
-  left: 300px;
-  font: hind;
-  font-weight: 400;
-  font-size: 20px;
   color: #a4a4a4;
 }
 */
+
 h2 {
   color: #ffffff;
   margin-bottom: 50px;
@@ -243,29 +258,11 @@ h4 {
   margin-top: 15px;
 }
 /*
-.services2 {
-  top: 780px;
-  position: absolute;
-  left: 700px;
-  font: hind;
-  font-weight: 400;
-  font-size: 20px;
-  color: #a4a4a4;
-}
-.services3 {
-  top: 780px;
-  position: absolute;
-  left: 1100px;
-  font: hind;
-  font-weight: 400;
-  font-size: 20px;
-  color: #a4a4a4;
-}
-*/
-
 .nav-text {
+  font-weight: 500;
   color: var(--color-primary);
 }
+*/
 .nav-number {
   color: #336699;
 }
